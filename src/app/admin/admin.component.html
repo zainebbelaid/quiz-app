@@ -1,0 +1,52 @@
+
+  <br>
+  <div class="ro">  
+    <div class="row">   
+    <div class="col s14 offset-s1">
+      <div class="card">
+        <div class="col s11">
+          <h4 style="    font-family: fangsong;
+          color: #5fc72a;"><img src="/assets/img/logo.png" style="width:150px;height:100px;" class="offset-s3">
+             Quiz-APP  Administrateur           
+          </h4>
+        </div>
+       
+        <div class="card-content">
+ 
+     <form #loginform="ngForm" (ngSubmit)="loginAdmin()">
+       <small >{{mesg}}</small>
+      
+       <div class="row">
+
+        <div class="input-field col s10">
+          <i class="material-icons prefix">account_circle</i>
+          <input type="text"  name="adminUsername" [(ngModel)]="admin.adminname" required [pattern]="namePattern">           
+         <label >Nom</label>
+        </div>
+
+       </div>
+
+       <div class="row">         
+        <div class="input-field col s12">
+         <i class="material-icons prefix">lock</i>
+         <input type="password"   name="mdp" [(ngModel)]="admin.password" required [pattern]="adminPattern">
+          <label>mot de passe </label>
+        </div>
+
+        </div>
+       
+    <div class="row">
+
+      <div class="input-field col s10" style="color: #26a69a;">
+        <button type="submit" class="btn-large btn-submit"[disabled]="!loginform.valid" >Valider</button>     
+      </div>
+    </div>
+       
+          
+        
+     </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>

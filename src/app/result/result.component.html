@@ -1,0 +1,13 @@
+
+<div class="card" style="background: #3a9efd; padding: 15px; text-align: center;">
+    <p> Résultat: </p>
+    <p> Score: {{score}}  </p>
+    <p> Temps: {{counter}}: sec </p>
+</div>
+<div style="margin-top: 10px;">
+    <button class="btn btn-danger" routerLink="/home" (click)="dismissPanel()">Quit</button>
+    <button class="btn btn-success" routerLink="/theme" (click)="dismissPanel()"
+        style="margin: 0 8px;">Continuer</button>
+    
+</div>
+

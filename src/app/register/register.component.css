@@ -1,0 +1,27 @@
+button.btn-submit{
+    width:100%;
+
+}
+
+ul.answer li:hover{
+    background-color:rgb(40, 206, 206);
+    color: #fff;
+    cursor: pointer;
+}
+
+ul li.selected{
+    background-color: rgb(61, 224, 224) !important;
+    color: #f2fafa !important;
+}
+
+.row .col.offset-s1 {
+    margin-left: 19.333333%;
+    margin-right: 23%;
+    margin-top: -1%;
+    margin-bottom: -3%;
+}
+input.ng-invalid.ng-dirty{
+    border-bottom-color : #e91e63 !important;
+    box-shadow: 0 1px 0 0 #e91e63 !important;
+
+}

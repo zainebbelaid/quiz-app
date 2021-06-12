@@ -1,0 +1,46 @@
+<br>
+<div class="ro">
+<div class="row">
+  <div class="col s14 offset-s1">
+    <div class="card">
+      <div class="col s11">
+        
+          <h4 style="font-family: cursive;
+          color: #fb3071;"><img src="/assets/img/logo.png" style="width:100px;height:100px;" class="offset-s3">
+             Quiz-APP l'inscription           
+          </h4>
+        </div>
+      <div class="card-content">
+        <form #registerform="ngForm">
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">account_circle</i>
+              <input type="text" name="name" #Name ng Modelel>
+              <label > Nom </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">mail_outline</i>
+              <input type="text" name="Email" #Email ng Modelel  [pattern]="emailPattern">
+              <label > Email </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <i class="material-icons prefix">lock</i>
+              <input type="password" name="passwrd" #Email ng Modelel>
+              <label > mot de passe </label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <button class="btn btn-submit" type="submit" [disabled]="!registerform.valid">s'inscrire</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div></div>

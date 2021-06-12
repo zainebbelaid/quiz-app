@@ -1,0 +1,27 @@
+
+<div class="row">
+    <div class="col-lg-3">
+        <div id="sideBar">
+ 
+  <h3 style="margin: 9px 0 -12px 15px;
+  font-family: cursive;
+  color: #031f84;">Thèmes</h3>
+<hr>
+
+ <div style="padding: 16px;" *ngFor="let t of themes">
+  <div class="card" id="theme">
+                     <h4> {{t.name}}</h4>
+    <button class="btn btn-danger" style="background: #3a9efd; border: 0;"
+                     (click)="openLevel(t.id, t.name)">GO! </button>
+     </div>
+ </div>
+ 
+   <button type="button" class="btn btn-outline-danger" style="margin-left: 20px;">Deconnecter</button>
+</div>
+</div>
+
+ <div class="col-lg-9">
+   <router-outlet></router-outlet>
+   </div>
+ </div>
+
